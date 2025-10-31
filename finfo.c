@@ -17,6 +17,7 @@
 #include <errno.h>
 #include <sys/stat.h>
 #include <string.h>
+#include <time.h>
 
 char* get_filetype(mode_t mode);
 void get_filepermissions(mode_t mode, char *ret);
@@ -56,7 +57,13 @@ int main(int argc, char* argv[])
         printf("File Size: %ld Bytes\n", (long)file_info.st_size);
 
         //print date and time of last modification, with an easy format to view
-        struct timepec ts = file_info.st_mtim;
+        struct timespec ts = file_info.st_mtim;
+        struct tm *local_time;
+
+        local_time = localtime(&ts.tv_sec);
+        printf("Last modified: %d/%d/%d | %d:%d\n", local_time->tm_mon, 
+            local_time->tm_mday, (local_time->tm_year + 1900), + local_time->tm_hour, 
+            local_time->tm_min);
         
         
     } else {
