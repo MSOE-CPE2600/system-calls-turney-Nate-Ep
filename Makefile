@@ -1,4 +1,4 @@
-CFLAGS=-c -g -Wall -Werror
+CFLAGS=-c -g -Wall -Werror -lc -g
 CC=gcc
 
 all: info pinfo finfo pmod
