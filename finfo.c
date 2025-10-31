@@ -61,9 +61,10 @@ int main(int argc, char* argv[])
         struct tm *local_time;
 
         local_time = localtime(&ts.tv_sec);
-        printf("Last modified: %d/%d/%d | %d:%d\n", local_time->tm_mon, 
+        printf("Last modified: %d/%d/%d | %d:%d\n\n", local_time->tm_mon, 
             local_time->tm_mday, (local_time->tm_year + 1900), + local_time->tm_hour, 
             local_time->tm_min);
+        
         
         
     } else {
