@@ -2,7 +2,7 @@
 * @file pinfo.c
 * @author Nathan Eppler <epplern@msoe.edu>
 * @date 30 October 2025
-* @brief
+* @brief Displays process information for a specified PID.
 *
 * Course: CPE 2600
 * Section: 111

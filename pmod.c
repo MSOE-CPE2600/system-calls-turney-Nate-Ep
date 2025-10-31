@@ -2,7 +2,7 @@
 * @file pmod.c
 * @author Nathan Eppler <epplern@msoe.edu>
 * @date 30 October 2025
-* @brief
+* @brief Modifies the program's priority to be less important.
 *
 * Course: CPE 2600
 * Section: 111

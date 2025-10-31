@@ -2,7 +2,7 @@
 * @file info.c
 * @author Nathan Eppler <epplern@msoe.edu>
 * @date 30 October 2025
-* @brief
+* @brief Displays system information to the user.
 *
 * Course: CPE 2600
 * Section: 111
